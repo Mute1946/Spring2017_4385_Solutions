@@ -2,9 +2,25 @@
 <html ng-app="QuestionProgram">
     <head>
         <meta charset="utf-8">
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
         
         <title>Question Program</title>
         
     </head>
+    
+    <body>
+        <div class="jumbotron">
+            <h1>Questions Program</h1>
+            <p>Question program that will ask students about thier current and future plans</p>
+        </div>
+        
+        <div class="container">
+            <div ng-controller="QuestionProgramController as qpc">
+                <p><span class="lable label-default">question:</span>{{qpc.selected_question.text}}</p>
+                
+            </div>
+        </div>
+    </body>
     
 </html>
