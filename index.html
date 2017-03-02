@@ -8,7 +8,7 @@
         <title>Question Program</title>
         
     </head>
-    
+    <!-- Mirrored from Dr. Babb 2016 Program from Github -->
     <body>
         <div class="jumbotron">
             <h1>Questions Program</h1>
@@ -17,10 +17,10 @@
         
         <div class="container">
             <div ng-controller="QuestionProgramController as qpc">
-                <p><span class="lable label-default">question:</span>{{qpc.selected_question.text}}</p>
-                
+                <p><span class="label label-default">Student:</span> {{qpc.selected_student.name}} </p>
+                <p><span class="label label-default">Question:</span> {{qpc.selected_question.Questiontext}} </p>
+                <p><span class="label label-default">Answer:</span> {{qpc.selected_question.Answertext}} </p>
             </div>
         </div>
     </body>
-    
 </html>
